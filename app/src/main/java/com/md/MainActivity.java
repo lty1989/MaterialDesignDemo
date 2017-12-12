@@ -1,8 +1,11 @@
 package com.md;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.md.drawer.DrawerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,7 +17,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.drawer).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, DrawerActivity.class);
+                startActivity(intent);
             }
         });
     }
