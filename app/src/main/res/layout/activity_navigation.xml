@@ -5,17 +5,11 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.md.drawer.DrawerActivity">
+    tools:context="com.md.navigation.NavigationActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"></android.support.v7.widget.Toolbar>
 
         <TextView
             android:layout_width="match_parent"
@@ -24,28 +18,12 @@
             android:text="Content" />
     </LinearLayout>
 
-    <LinearLayout
+    <android.support.design.widget.NavigationView
         android:layout_width="200dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="@android:color/darker_gray"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="item1" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="item2" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="item3" />
-    </LinearLayout>
-
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/navigation_menu" />
 
 </android.support.v4.widget.DrawerLayout>

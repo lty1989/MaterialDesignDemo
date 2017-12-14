@@ -4,25 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.md.MainActivity">
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/drawer"
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hdrawer" />
+        android:src="@mipmap/ic_launcher" />
 
-    <Button
-        android:id="@+id/navigation"
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="navigation" />
+        android:text="Andy"
+        android:textSize="30sp" />
 
-    <Button
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="fab" />
 
 </LinearLayout>
